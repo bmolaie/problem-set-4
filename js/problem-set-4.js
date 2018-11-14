@@ -3,7 +3,7 @@
  */
 
 function hello() {
-var output=document.getElementById("output1");
+let output=document.getElementById("output1");
 output.innerHTML="Hello, AP Computer Science Principles!";
 
   ////////////////// DO NOT MODIFY
@@ -44,7 +44,7 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-var fahrenheit= ((cels * 9/5) + 32).toFixed(2);
+let fahrenheit= ((cels * 9/5) + 32).toFixed(2);
 document.getElementById("output3").innerHTML=(cels + " degrees Celsius equals " + fahrenheit + " degrees Fahrenheit.");
 
   ////////////////////////// DO NOT MODIFY
@@ -65,7 +65,7 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-var celsius= ((fahr-32)*(5/9)).toFixed(2);
+let celsius= ((fahr-32)*(5/9)).toFixed(2);
 document.getElementById("output4").innerHTML=(fahr + " degrees Fahrenheit equals " + celsius + " degrees Celsius.");
 
   ///////////////////////////// DO NOT MODIFY
@@ -90,7 +90,11 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 5 CODE HERE
+  let miles=Math.floor(inches/63360);
+  let feet=Math.floor((inches/12) % 3);
+  let yards=Math.floor((inches/36) % 1760);
+  let inch2=Math.floor(inches % 12);
+  document.getElementById("output5").innerHTML=("Miles: " + miles + "<br/>" + "Yards: " + yards + "<br/>" + "Feet: " + feet + "<br/>" + "Inches: " + inch2);
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
@@ -114,7 +118,10 @@ function centimeters() {
   let centimeters = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 6 CODE HERE
+  let kilometers=Math.floor(centimeters/100000);
+  let meters=Math.floor((centimeters/100) % 1000);
+  let centimeters2=Math.floor(centimeters % 100);
+  document.getElementById("output6").innerHTML=("Kilometers: " + kilometers + "<br/>" + "Meters: " + meters + "<br/>" + "Centimeters: " + centimeters2);
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
@@ -138,7 +145,12 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 7 CODE HERE
+  let gallons=Math.floor(centimeters/100000);
+  let quarts=Math.floor((centimeters/100) % 1000);
+  let pints=Math.floor(centimeters % 100);
+  let cups=Math.floor(centimeters % 100);
+  let fluidounces2=Math.floor(centimeters % 100);
+  document.getElementById("output7").innerHTML=("Gallons: " + gallons + "<br/>" + "Quarts: " + quarts + "<br/>" + "Pints: " + pints + "<br/>" + "Cups: " + cups + "<br/>" + "Fluid Ounces: " + fluidounces2);
 
   /////////////////////////////// DO NOT MODIFY
   check("fluidOunces", input); // DO NOT MODIFY
