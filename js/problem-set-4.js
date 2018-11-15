@@ -145,11 +145,11 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  let gallons=Math.floor(centimeters/100000);
-  let quarts=Math.floor((centimeters/100) % 1000);
-  let pints=Math.floor(centimeters % 100);
-  let cups=Math.floor(centimeters % 100);
-  let fluidounces2=Math.floor(centimeters % 100);
+  let gallons=Math.floor(fluidOunces/128);
+  let quarts=Math.floor(fluidOunces % 128 / 32);
+  let pints=Math.floor(fluidOunces % 128 % 32 / 16);
+  let cups=Math.floor(fluidOunces % 128 % 32 % 16 / 8);
+  let fluidounces2=Math.floor(fluidOunces % 128 % 32 % 16 % 8);
   document.getElementById("output7").innerHTML=("Gallons: " + gallons + "<br/>" + "Quarts: " + quarts + "<br/>" + "Pints: " + pints + "<br/>" + "Cups: " + cups + "<br/>" + "Fluid Ounces: " + fluidounces2);
 
   /////////////////////////////// DO NOT MODIFY
