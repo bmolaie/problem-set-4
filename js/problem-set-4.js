@@ -175,7 +175,7 @@ function ounces() {
   ////////////////////// DO NOT MODIFY
 
   let tons=Math.floor(ounces/32000);
-  let pounds=Math.floor(ounces % 32000) / 16);
+  let pounds=Math.floor(ounces % 32000 / 16);
   let ounces2=Math.floor(ounces % 32000 % 16);
   document.getElementById("output8").innerHTML=("Tons: " + tons + "<br/>" + "Pounds: " + pounds + "<br/>" + "Ounces: " + ounces2);
   
