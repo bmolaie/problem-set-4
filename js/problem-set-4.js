@@ -177,12 +177,8 @@ function ounces() {
   let tons=Math.floor(ounces/32000);
   let pounds=Math.floor(ounces % 32000 / 16);
   let ounces2=Math.floor(ounces % 32000 % 16);
+
   document.getElementById("output8").innerHTML=("Tons: " + tons + "<br/>" + "Pounds: " + pounds + "<br/>" + "Ounces: " + ounces2);
-<<<<<<< HEAD
-
-=======
-
->>>>>>> cb41e4c5fa2172c209d6467f79119f8336dac1a7
   ////////////////////////// DO NOT MODIFY
   check("ounces", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
@@ -211,7 +207,7 @@ function money() {
   let nickels=Math.floor(pennies % 100 % 25 % 10 / 5);
   let pennies2=Math.floor(pennies % 100 % 25 % 10 % 5);
   document.getElementById("output9").innerHTML=("Dollars: " + dollars + "<br/>" + "Quarters: " + quarters + "<br/>" + "Dimes: " + dimes + "<br/>" + "Nickels: " + nickels + "<br/>" + "Pennies: " + pennies2);
-  
+
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
   ///////////////////////// DO NOT MODIFY
